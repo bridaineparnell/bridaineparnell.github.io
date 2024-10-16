@@ -1,4 +1,8 @@
-
+title: Bríd-Áine Parnell
+description: I'm a researcher in responsible NLP, focused on narratives and communication around AI, ethics and regulation, and the social impact of AI and NLP
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
 
 # Build settings
 markdown: kramdown
