@@ -10,6 +10,8 @@ gem "ostruct"
 gem 'tzinfo-data'
 gem 'rexml'
 gem 'bigdecimal'
+gem 'fiddle'
+gem 'faraday-retry'
 
 
 
