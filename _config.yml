@@ -1,5 +1,8 @@
 theme: alembic-jekyll-theme
 
+navigation:
+  enabled: true
+
 # Site configuration
 # 1. Files excluded from Jekyll builds
 # 2. Installed Gems
