@@ -7,6 +7,7 @@ gem "base64"
 gem "ostruct"
 gem 'tzinfo-data'
 gem 'rexml'
+gem 'bigdecimal'
 
 
 
