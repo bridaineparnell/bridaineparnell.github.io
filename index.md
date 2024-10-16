@@ -3,7 +3,7 @@
 feature_text: |
   ## Bríd-Áine Parnell
   Researcher in responsible NLP and AI
-feature_image: "https://picsum.photos/1300/400?image=989"
+feature_image: /assets/kier-in-sight-archives-bdEVC3OwrkQ-unsplash.jpg
 excerpt: "I'm a researcher in responsible natural language processing and artificial intelligence, focused on narratives and communication in AI, tecnology ethics and regulation, and the social impact of AI and NLP."
 ---
 
