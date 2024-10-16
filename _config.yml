@@ -1,5 +1,5 @@
 # Theme
-theme: theme-basically-basic
+theme: jekyll-theme-minimal
 
 # Where things are
 source              : .
