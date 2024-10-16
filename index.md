@@ -15,7 +15,7 @@ I'm currently pursuing a PhD in responsible natural language processing and arti
 
 - How have the stories told by the AI industry about AI as a technology influenced the formation of the EU AI Act?
 
-My masters thesis asks if the narratives that surround AI as a technology, in media reports, interviews and even submissions of evidence to the EU Commission, could have influenced how policymakers thought about what they needed to regulate and how they would do it. In particular, prevailing stories that AI will definitely progress until it reaches general intelligence, that it will lead to either utopia or dystopia, and that it's a zero-sum game, if 'we' don't get there first, someone else wil reap the rewards.
+My masters' thesis asks if the narratives that surround AI as a technology, in media reports, interviews and even submissions of evidence to the EU Commission, could have influenced how policymakers thought about what they needed to regulate and how they would do it. In particular, prevailing stories that AI will definitely progress until it reaches general intelligence, that it will lead to either utopia or dystopia, and that it's a zero-sum game, if 'we' don't get there first, someone else wil reap the rewards.
 
 ## Background
 
