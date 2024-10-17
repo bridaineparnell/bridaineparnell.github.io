@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gemspec
-
+gem "jekyll"
+gem "alembic-jekyll-theme"
+gem 'tzinfo-data'
 
 
