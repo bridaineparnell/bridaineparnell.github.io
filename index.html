@@ -23,73 +23,60 @@ layout: default
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %}
-      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
+      <a href={{ "/contact/" | prepend: site.baseurl }}>Contact</a>
     </div>
 </header>
 
 
 <main class="content" role="main">
 
-    {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Featured</span></h5>
+  <h5 class="index-headline featured"><span>Current research</span></h5>
+  
+  <div class="container regular">
+    <article class="post" role="article">
+      <div class="article-item">
+        <header class="post-header">
+          <h2 class="post-title">CDT PhD in Designing Responsible NLP</h2>
+        </header>
+        <section class="post-excerpt">
+          <p>I'm currently pursuing a PhD in responsible natural language processing and artificial intelligence at the University of Edinburgh. My research focuses on narratives and communication in AI, tecnology ethics and regulation, and the social impact of AI and NLP. I'm interested in how the stories we tell about technology today influences the design and regulation of the technologies of tomorrow.</p>
+        </section>
+      </div>
+    </article>
+  </div>
 
-    <div class="container featured">
-      {% for post in site.tags.featured %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-  <!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
+  <h5 class="index-headline normal"><span>Previous work</span></h5>
+  
+  <div class="container regular">
+    <article class="post" role="article">
+      <div class="article-item">
+        <header class="post-header">
+          <h2 class="post-title">How have the stories told by the AI industry about AI as a technology influenced the formation of the EU AI Act?</h2>
+        </header>
+        <section class="post-excerpt">
+          <p>My masters' thesis asks if the narratives that surround AI as a technology, in media reports, interviews and even submissions of evidence to the EU Commission, could have influenced how policymakers thought about what they needed to regulate and how they would do it. In particular, prevailing stories that AI will definitely progress until it reaches general intelligence, that it will lead to either utopia or dystopia, and that it's a zero-sum game, if 'we' don't get there first, someone else wil reap the rewards.</p>
+        </section>
+      </div>
+    </article>
+  </div>
 
-    <h5 class="index-headline normal"><span>Regular</span></h5>
-    {% endif %}
+ <h5 class="index-headline normal"><span>Background</span></h5>
+  
+  <div class="container featured" style="max-width: 900px; margin: 0 auto;">
+    <article class="post" role="article">
+      <div class="article-item">
+        <header class="post-header">
+          <h2 class="post-title">My background</h2>
+        </header>
+        <section class="post-excerpt">
+          <ul>
+            <li>MA English Literature, MSc Narrative Futures</li>
+            <li>15+ years in journalism and content marketing, primarily as an economic, finance and technology specialist.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </div>
 
-    <div class="cf frame">
-      {% for post in paginator.posts %}
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-          <div class="article-item">
-            <header class="post-header">
-              <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
-            </header>
-            <section class="post-excerpt" itemprop="description">
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-            </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
-            </div>
-          </div>
-        </article>
-      {% endfor %}
-    </div>
-
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
-        {% endif %}
-      {% endif %}
-    </nav>
-
-
-    <!-- {{!! After all the posts, we have the previous/next pagination links }}
-    {{pagination}} -->
 
 </main>
