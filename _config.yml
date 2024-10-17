@@ -10,15 +10,15 @@ description: > # this means to ignore newlines until "email:"
 
 email: bridaine.parnell@ed.ac.uk
 #blog logo
-#logo: "{{ site.baseurl }}/assets/images/df_logo.jpg"
+#logo: "/assets/images/df_logo.jpg"
 #float_logo: true # true, false (default)
 
 # blog cover
-cover: "{{ site.baseurl }}/assets/images/kier-in-sight-archives-bdEVC3OwrkQ-unsplash.jpg"
+cover: "/assets/images/kier-in-sight-archives-bdEVC3OwrkQ-unsplash.jpg"
 
 name: 'Bríd-Áine Parnell'
 author: 'Bríd-Áine Parnell'
-#author_image: "{{ site.baseurl }}/assets/images/author.jpg"
+#author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
