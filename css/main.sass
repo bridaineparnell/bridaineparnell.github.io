@@ -604,6 +604,51 @@ body
 .post-tag-articleimage
   display: none
 
+.container.regular
+  display: flex; // Makes it a flex container for its direct children
+  align-items: flex-start; // Aligns items to the top
+  max-width: 900px; // Use your existing max-width for containers, if applicable
+  margin: $rs * 3 auto; // Centered with some top/bottom margin, adjust as needed
+  padding: 0 $rs * 2; // Consistent padding, adjust as needed
+ }
+  // Adjust for smaller screens (e.g., tablets/phones)
+  @include respond-to(800) // Using your existing responsive mixin
+    flex-direction: column; // Stack items vertically
+    padding: 0 $rs; // Adjust padding for smaller screens
+  
+
+  // Style for the new image container
+  .index_image {
+    flex: 0 0 auto; // Prevents the image from growing or shrinking, takes its natural width
+    width: 250px; // **Adjust this width as needed for your image's desired size**
+    margin-right: $rs * 2; // Space between the image and the content
+
+    img {
+      max-width: 100%; // Ensures the image itself scales down if its container is too small
+      height: auto; // Maintains aspect ratio
+      display: block; // Removes extra space below the image caused by inline-block default
+    }
+
+    // Responsive adjustments for the image when stacked
+    @include respond-to(800) {
+      width: 100%; // Image takes full width on small screens when stacked
+      margin-right: 0; // Remove horizontal margin
+      margin-bottom: $rs; // Add vertical space below the image when stacked
+    }
+  }
+
+  // Style for your existing article.post to make it fill the remaining space
+  article.post {
+    flex: 1; // Allows the article to grow and take up the remaining space
+    min-width: 0; // Important: Prevents content inside the article from overflowing the flex container, especially with long words/elements.
+    
+    // You might need to review and adjust padding/margins that were originally on .post
+    // if they conflict with the new flex layout. For example, if .post had left-margin
+    // that should now be handled by the flex container's spacing or removed.
+  }
+}
+  
+  
 pre,
 code
   font-size: 15px
