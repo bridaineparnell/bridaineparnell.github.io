@@ -610,11 +610,10 @@ body
   max-width: 900px; // Use your existing max-width for containers, if applicable
   margin: $rs * 3 auto; // Centered with some top/bottom margin, adjust as needed
   padding: 0 $rs * 2; // Consistent padding, adjust as needed
- }
-  // Adjust for smaller screens (e.g., tablets/phones)
+  
   @include respond-to(800) // Using your existing responsive mixin
-    flex-direction: column; // Stack items vertically
-    padding: 0 $rs; // Adjust padding for smaller screens
+  flex-direction: column; // Stack items vertically
+  padding: 0 $rs; // Adjust padding for smaller screens
   
 
   // Style for the new image container
