@@ -160,6 +160,22 @@ body
       font-size: 20px
       line-height: 1.5
       color: #666665
+      // Add flexbox properties here to make its direct children align
+      display: flex       // Make .post-excerpt a flex container
+      align-items: flex-start // Align items to the top
+      gap: 20px           // Add space between the image and the text content
+      
+      img
+        flex-shrink: 0
+        max-width: 300px    // Max width of the image
+        height: auto        // Maintain aspect ratio
+        display: block      // Important for proper image rendering
+        
+      .excerpt-text-content
+        flex-grow: 1 // Allow the text content to take up remaining space
+        p
+          padding-top: 0 // Remove top padding from the first paragraph
+    
     .post-meta
       font-size: 14px
       color: #b3b3b1
@@ -448,24 +464,7 @@ body
     ol li
       list-style-type: decimal
       
-  .media-block
-    display: flex // Enable flexbox for this specific content block
-    align-items: flex-start // Align items to the top (image and text)
-    gap: 20px // Space between the image and the text
-    margin-top: 30px
-    margin-bottom: 30px // Add some space below the media block
-    img
-      flex-shrink: 0 // Prevent the image from shrinking
-      max-width: 300px // <-- Sets the maximum width the image can take
-      height: auto
-      display: block // Ensure it behaves like a block element
-      object-fit: cover // Crop the image to fit the dimensions without distortion
-      object-position: center // Center the cropped image
-    
-  .media-content
-    flex-grow: 1 // Allow the text content to take up remaining space
-        
-      
+
 
   .bottom-teaser
     padding: 50px 0
