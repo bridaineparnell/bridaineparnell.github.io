@@ -399,8 +399,17 @@ body
       color: #333
       text-decoration: underline
     img
-      max-width: 100%
+      max-width: 10%
       margin: 0 auto
+      flex-shrink: 0 // Prevents the image container from shrinking
+      width: 150px // Set a fixed width for the image container
+      height: 150px // Set a fixed height for the image container
+      overflow: hidden
+      display: block // Removes any extra space below the image
+      width: 100% // Makes the image fill the .img div's width
+      height: 100% // Makes the image fill the .img div's height
+      object-fit: cover // Ensures the image covers the area without distortion, cropping if necessary
+      object-position: center
     figure
       margin: 0
       padding: 0 0 30px
