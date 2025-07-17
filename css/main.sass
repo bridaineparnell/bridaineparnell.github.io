@@ -160,21 +160,16 @@ body
       font-size: 20px
       line-height: 1.5
       color: #666665
-      // Add flexbox properties here to make its direct children align
-      display: flex       // Make .post-excerpt a flex container
-      align-items: flex-start // Align items to the top
-      gap: 20px           // Add space between the image and the text content
+      margin-top: 30px
       
       img
-        flex-shrink: 0
+        float: left
+        margin-right: 20px
+        margin-bottom: 10px
         max-width: 300px    // Max width of the image
         height: auto        // Maintain aspect ratio
         display: block      // Important for proper image rendering
         
-      .excerpt-text-content
-        flex-grow: 1 // Allow the text content to take up remaining space
-        p
-          padding-top: 0 // Remove top padding from the first paragraph
     
     .post-meta
       font-size: 14px
