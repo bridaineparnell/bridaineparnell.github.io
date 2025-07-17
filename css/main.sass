@@ -255,6 +255,7 @@ body
         z-index: 1
       .post-image-image2
         display: none
+    
     @media(max-width: 700px)
       .post-image-image
         display: none
@@ -268,6 +269,7 @@ body
         text-indent: -9999px
         padding-top: 33%
         z-index: 1
+
     .post-meta
       position: absolute
       bottom: $rs*5
@@ -604,47 +606,6 @@ body
 .post-tag-articleimage
   display: none
 
-
-.container.regular
-  // Makes it a flex container for its direct children
-  display: flex
-  // Aligns items to the top
-  align-items: flex-start
-  max-width: 900px # Use your existing max-width for containers, if applicable
-  margin: $rs * 3 auto # Centered with some top/bottom margin, adjust as needed
-  padding: 0 $rs * 2 # Consistent padding, adjust as needed
-
-  // Adjust for smaller screens (e.g., tablets/phones)
-  @include respond-to(800)
-    flex-direction: column # Stack items vertically
-    padding: 0 $rs # Adjust padding for smaller screens
-
-  // Style for the new image container
-  .index_image
-    // Prevents the image from growing or shrinking, takes its natural width
-    flex: 0 0 auto
-    width: 250px 
-    margin-right: $rs * 2
-    
-    .img
-      max-width: 100%
-      height: auto
-      display: block
-
-    // Responsive adjustments for the image when stacked
-    @include respond-to(800)
-      width: 100%
-      margin-right: 0 # Remove horizontal margin
-      margin-bottom: $rs # Add vertical space below the image when stacked
-
-  // Style for your existing article.post to make it fill the remaining space
-  .article.post
-    // Allows the article to grow and take up the remaining space
-    flex: 1
-    // Important: Prevents content inside the article from overflowing the flex container, especially with long words/elements.
-    min-width: 0
-
-  
   
 pre,
 code
