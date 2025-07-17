@@ -399,23 +399,23 @@ body
       color: #333
       text-decoration: underline
     
-    .media-block
-     display: flex // Enable flexbox for this specific content block
-     align-items: flex-start // Align items to the top (image and text)
-     gap: 20px // Space between the image and the text
-     margin-bottom: 30px // Add some space below the media block
+  .media-block
+    display: flex // Enable flexbox for this specific content block
+    align-items: flex-start // Align items to the top (image and text)
+    gap: 20px // Space between the image and the text
+    margin-bottom: 30px // Add some space below the media block
 
-     img
+    img
       // Styles for the image when it's inside a .media-block
-      flex-shrink: 0 // Prevent the image from shrinking
-      width: 150px // Set a fixed width for the image
-      height: 150px // Set a fixed height for the image
-      display: block // Ensure it behaves like a block element
-      object-fit: cover // Crop the image to fit the dimensions without distortion
-      object-position: center // Center the cropped image
+    flex-shrink: 0 // Prevent the image from shrinking
+    width: 150px // Set a fixed width for the image
+    height: 150px // Set a fixed height for the image
+    display: block // Ensure it behaves like a block element
+    object-fit: cover // Crop the image to fit the dimensions without distortion
+    object-position: center // Center the cropped image
     
-    .media-content
-      flex-grow: 1 // Allow the text content to take up remaining space
+  .media-content
+    flex-grow: 1 // Allow the text content to take up remaining space
       // You can add specific text styling for this block if needed
       p
         // Override or adjust paragraph styles specifically within media-content if needed
