@@ -456,8 +456,8 @@ body
     margin-bottom: 30px // Add some space below the media block
     img
       flex-shrink: 0 // Prevent the image from shrinking
-      width: 150px // Set a fixed width for the image
-      height: 150px // Set a fixed height for the image
+      max-width: 300px // <-- Sets the maximum width the image can take
+      height: auto
       display: block // Ensure it behaves like a block element
       object-fit: cover // Crop the image to fit the dimensions without distortion
       object-position: center // Center the cropped image
