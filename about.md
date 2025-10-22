@@ -4,11 +4,11 @@ title: Contact
 permalink: /contact/
 ---
 <div style="text-align: center;">
-  <a href="mailto:bridaineparnell@gmail.com" style="background-color: #28a745; color: white; padding: 30px 60px; text-decoration: none; border-radius: 15px; font-size: 28px; display: inline-block; margin-right: 100px;">
+  <a href="mailto:bridaineparnell@gmail.com" style="background-color: #28a745; color: white; padding: 20px 40px; text-decoration: none; border-radius: 15px; font-size: 20px; display: inline-block; margin-right: 100px;">
     Email
   </a>
 
-  <a href="https://www.linkedin.com/in/bridaineparnell/" target="_blank" style="background-color: #0A66C2; color: white; padding: 30px 60px; text-decoration: none; border-radius: 15px; font-size: 28px; display: inline-block;">
+  <a href="https://www.linkedin.com/in/bridaineparnell/" target="_blank" style="background-color: #0A66C2; color: white; padding: 20px 40px; text-decoration: none; border-radius: 15px; font-size: 20px; display: inline-block;">
     LinkedIn
   </a>
 </div>
