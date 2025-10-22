@@ -17,9 +17,9 @@ permalink: /contact/
 
 ## Affiliations
 
-[![](\assets\images\Edinburgh+Futures+Institute_black-01.jpg){:style="width: 200px;"}](https://www.efi.ed.ac.uk)
+[![](\assets\images\Edinburgh+Futures+Institute_black-01.jpg){:style="width: 350px;"}](https://www.efi.ed.ac.uk)
 
-[![](\assets\images\main_inf_logo.jpg){:style="width: 200px;"}](https://www.inf.ed.ac.uk)
+[![](\assets\images\main_inf_logo.jpg){:style="width: 350px;"}](https://www.inf.ed.ac.uk)
 
-[![](\assets\images\ilcc.png){:style="width: 200px;"}](https://www.ilcc.inf.ed.ac.uk)
+[![](\assets\images\ilcc.png){:style="width: 350px;"}](https://www.ilcc.inf.ed.ac.uk)
 
